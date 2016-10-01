@@ -1,9 +1,30 @@
-/.bundle/
-/.yardoc
-/Gemfile.lock
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
+*.gem
+*.rbc
+.bundle
+.config
+.yardoc
+Gemfile.lock
+InstalledFiles
+
+# doc files.
+rdoc
+_yardoc
+doc
+lib/bundler/man
+
+# test temp files.
+spec/reports
+test/tmp
+test/version_tmp
+coverage
+
+# temp directories.
+pkg/
+tmp/
+temp/
+vendor/bundle/
+
+# IDE Projects files.
+nbproject/
+.project
+.idea/

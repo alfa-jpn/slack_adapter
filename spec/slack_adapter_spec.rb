@@ -1,11 +1,29 @@
 require 'spec_helper'
 
 describe SlackAdapter do
-  it 'has a version number' do
-    expect(SlackAdapter::VERSION).not_to be nil
+  describe '.config' do
+    subject do
+      SlackAdapter.config
+    end
+
+    it 'has token' do
+      expect(subject).to respond_to(:token)
+    end
+
+    it 'has api_url' do
+      expect(subject).to respond_to(:api_url)
+    end
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe '.configure' do
+    subject do
+      SlackAdapter.configure do |config|
+        config.class
+      end
+    end
+
+    it 'execute block with config' do
+      expect(subject).to be(OpenStruct)
+    end
   end
 end
