@@ -1,5 +1,6 @@
 require 'ostruct'
 require 'slack_adapter/version'
+require 'slack_adapter/requester'
 
 module SlackAdapter
   # Get configuration.
