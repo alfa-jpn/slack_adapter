@@ -1,4 +1,5 @@
 module SlackAdapter
+  # Slack requester.
   module Requester
     class << self
       # Request to slack.
